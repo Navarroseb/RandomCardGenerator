@@ -1,3 +1,5 @@
+import "./style.css";
+
 window.onload = () => {
   document.querySelector(".card").classList.add(generateRandomsymbol());
   document.querySelector(".card").innerHTML = generateRandomNumber();
@@ -37,4 +39,4 @@ let generateRandomsymbol = () => {
 const boton = document.createElement("button");
 boton.type = "button";
 boton.innerText = "Haz Click";
-document.body.appendChild(boton);
+document.body.appendChild(boton).onclick;
