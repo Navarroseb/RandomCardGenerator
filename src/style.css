@@ -72,8 +72,3 @@ body {
   height: 100%;
   transform: rotate(180deg);
 }
-.boton {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}

@@ -1,14 +1,9 @@
-import "./style.css";
+import "../src/style.css";
 
 window.onload = () => {
   document.querySelector(".card").classList.add(generateRandomsymbol());
   document.querySelector(".card").innerHTML = generateRandomNumber();
-  setTimeout(() => {
-    document.querySelector(".card").classList.remove("heart");
-    document.querySelector(".card").classList.add("spade");
-  }, 5000);
 };
-
 let generateRandomNumber = () => {
   let numbers = [
     "A",
@@ -35,8 +30,3 @@ let generateRandomsymbol = () => {
   let indexsymbols = Math.floor(Math.random() * symbols.length);
   return symbols[indexsymbols];
 };
-
-const boton = document.createElement("button");
-boton.type = "button";
-boton.innerText = "Haz Click";
-document.body.appendChild(boton).onclick;
